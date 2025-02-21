@@ -5,5 +5,4 @@ router = Router()
 
 
 @router.message(CommandStart)
-async def command_start(message: types.Message) -> None:
-    pass
+async def command_start(message: types.Message) -> None: ...
