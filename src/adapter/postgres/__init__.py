@@ -1,8 +1,4 @@
-# from src.db.db import DatabaseManager
-from src.database.models import init_db 
-# # Создаем экземпляр DatabaseManager
-# db_manager = DatabaseManager()
+__all__ = ["init_db", "async_session"]
 
-# # Экспортируем только db_manager
-# __all__ = ["db_manager"]
-__all__ = ["init_db"]
+from .init_db import init_db 
+from .init_db import async_session

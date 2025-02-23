@@ -1,4 +1,4 @@
 from aiogram import Bot
-from src import get_bot_token
+from src.config import settings
 
-bot = Bot(token=get_bot_token())
+bot = Bot(token=settings.bot_token)

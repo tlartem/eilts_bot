@@ -2,7 +2,9 @@
 from pathlib import Path
 
 # Определяем корень проекта
-ROOT_DIR = Path(__file__).resolve().parent.parent  # Корень проекта (на уровень выше src)
+ROOT_DIR = (
+    Path(__file__).resolve().parent.parent
+)  # Корень проекта (на уровень выше src)
 
 # Основные директории
 SRC_DIR = ROOT_DIR / "src"

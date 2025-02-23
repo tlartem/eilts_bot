@@ -9,4 +9,4 @@ class Settings(BaseSettings):
     IS_DEBUG: bool = True
 
 
-settings = Settings()
+settings = Settings()  # type: ignore
