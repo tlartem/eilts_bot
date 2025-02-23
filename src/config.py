@@ -7,6 +7,10 @@ class Settings(BaseSettings):
     db_url: str
 
     IS_DEBUG: bool = True
+    media_dir: str
+
+    class Config:
+        env_file = ".env"
 
 
 settings = Settings()  # type: ignore
